@@ -55,3 +55,47 @@
 .theme-dark .header__theme-menu-button_type_dark {
   outline: 1px solid var(--theme-menu-button-border-color);      /*Кнопка дефолтная в темном режиме*/
 }
+
+@media (prefers-color-scheme: dark) {
+  .page {
+  --background-img: url('../images/cover-image-dark.png');
+  --background-color: #000028;
+  --title-color: #DB00FF;
+  --accent-color: #FF0070;
+  --main-text-color: #F1B2CE;
+  --main-text-link-color: #F1B2CE;
+  --decorated-zone-color: #FF0070;
+  --theme-menu-button-font-color: #FF0070;
+  --theme-menu-button-border-color: #FF0070;
+  --theme-menu-button-border-hover-color: #FF007066; /* 40% transparency*/
+  --theme-menu-button-border-focus-color: #FF0070;
+  --section-title-font-color: #FF0070;
+  }
+
+  /*Кнопка день*/
+
+  .header__theme-menu-button_type_light:hover {
+    outline: 1px solid var(--theme-menu-button-border-hover-color);   /*Кнопка в ховере в темной теме*/
+  }
+  
+  .header__theme-menu-button_type_light:focus {
+    border-bottom: 1px solid var(--theme-menu-button-border-focus-color);     /*Кнопка в фокусе в темной теме*/
+  }
+
+  /*Кнопка авто*/
+  .header__theme-menu-button_type_auto:hover {
+    outline: 1px solid var(--theme-menu-button-border-hover-color);
+  }
+
+  .header__theme-menu-button_type_auto:focus {
+    border-bottom: 1px solid var(--theme-menu-button-border-focus-color);
+  }
+  
+  /*Кнопка неон*/
+  
+  .header__theme-menu-button_type_dark {
+    outline: 1px solid var(--theme-menu-button-border-color);      /*Кнопка дефолтная в темном режиме*/
+  }
+    /*TODO разобраться*/
+
+}

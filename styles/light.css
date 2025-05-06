@@ -56,10 +56,68 @@
 
 /*Кнопка неон*/
 
+.theme-light .header__theme-menu-button_type_dark {
+  outline: none;                         /*кнопка дефолтная prefers light выбран день*/
+}
+
 .theme-light .header__theme-menu-button_type_dark:hover {
   outline: 1px solid var(--theme-menu-button-border-hover-color);    /*Кнопка в ховере в светлой теме*/
 }
 
 .theme-light .header__theme-menu-button_type_dark:focus {
   border-bottom: 1px solid var(--theme-menu-button-border-focus-color);     /*Кнопка в фокусе в светлой теме*/
+}
+
+@media (prefers-color-scheme: light) {
+  .page {
+    --background-img: url('../images/cover-image-light.png');
+    --background-color: #FFF1F7;
+    --title-color: #FFC2E6;
+    --accent-color: #FF8DCB;
+    --main-text-color: #353430;
+    --main-text-link-color: #353430;
+    --decorated-zone-color: #353430;
+    --theme-menu-button-font-color: #353430;
+    --theme-menu-button-border-color: #353430;
+    --theme-menu-button-border-hover-color: #32312D66; /* 40% transparency*/
+    --theme-menu-button-border-focus-color: #353430;
+    --section-title-font-color: #353430;
+  }
+
+  .title-decor {
+    color: var(--main-text-color);
+  }
+  
+  .rec-item {
+    display: none;
+  }
+  
+  /*Кнопка день*/
+  
+  .header__theme-menu-button_type_light {
+    outline: none;       /*Кнопка дефолтная в светлом режиме*/
+  }
+
+    /*Кнопка авто*/
+  .header__theme-menu-button_type_auto:hover {
+    outline: 1px solid var(--theme-menu-button-border-hover-color);
+  }
+
+  .header__theme-menu-button_type_auto:focus {
+    border-bottom: 1px solid var(--theme-menu-button-border-focus-color);
+  }
+  
+  /*Кнопка неон*/
+
+  .header__theme-menu-button_type_dark {
+    outline: 1px solid var(--theme-menu-button-border-color);                         /*кнопка дефолтная prefers light но выбран неон*/
+  }
+  
+  .header__theme-menu-button_type_dark:hover {
+    outline: 1px solid var(--theme-menu-button-border-hover-color);    /*Кнопка в ховере в светлой теме*/
+  }
+  
+  .header__theme-menu-button_type_dark:focus {
+    border-bottom: 1px solid var(--theme-menu-button-border-focus-color);     /*Кнопка в фокусе в светлой теме*/
+  }
 }
