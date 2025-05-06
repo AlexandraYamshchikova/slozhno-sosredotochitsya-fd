@@ -2,3 +2,40 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+:root {
+  --background-img: url('../images/cover-image-dark.png');
+  --background-color: #000028;
+  --title-color: #DB00FF;
+  --accent-color: #FF0070;
+  --main-text-color: #F1B2CE;
+  --main-text-link-color: #F1B2CE;
+  --decorated-zone-color: #FF0070;
+  --theme-menu-button-font-color: #FF0070;
+  --theme-menu-button-border-color: #FF0070;
+  --theme-menu-button-border-hover-color: #FF007066; /* 40% transparency*/
+  --theme-menu-button-border-focus-color: #FF0070;
+  --section-title-font-color: #FF0070;
+
+  /*Шрифты*/
+  --general-font-family: 'IBM Plex mono';
+  --theme-menu-button-font-size: 18px;
+  --section-title-font-size: 18px;
+  --section-subtitle-font-size: 18px;
+  --article-main-font-size: 18px;
+  --article-title-font-size: 18px;
+  --mobile-header-title: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --mobile-footer-title: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --tablet-header-title: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  --tablet-footer-title: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+
+  /*line-height*/
+  --theme-menu-button-line-height: 25px;
+  --header-title-line-height: 83%;
+  --footer-title-line-height: 83%;
+  --main-text-line-height: 23.4px;
+
+  /*font-weight*/
+  --font-weight-bold: bold;
+  --font-weight-normal: normal;
+
+}
