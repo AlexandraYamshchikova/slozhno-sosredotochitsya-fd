@@ -7,7 +7,7 @@
   background-position: center;
   background-color: var(--background-color);
   background-attachment: fixed;
-  font-family: var(--general-font-family);
+  font-family: var(--general-font-family), sans-serif;
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 }
 
@@ -38,7 +38,7 @@
   display: block;
   padding: 0 13px;
   padding-bottom: 1.5px;
-  font-family: var(--general-font-family);
+  font-family: var(--general-font-family), sans-serif;
   color: var(--theme-menu-button-font-color);
   font-style: normal;
   font-weight: var(--font-weight-normal);
@@ -56,41 +56,41 @@
 .header__theme-menu-button_active {
   pointer-events: none;
   outline: 1px solid var(--theme-menu-button-border-color);
-}                                                /*TODO Доразобраться с поведением кнопок  в том числе с прыганием в состоянии фокус*/
+} /*TODO Доразобраться с поведением кнопок  в том числе с прыганием в состоянии фокус*/
 
 /*Кнопка день*/
 .theme-auto .header__theme-menu-button_type_light {
-  outline: none;       /*Кнопка дефолтная в светлом режиме в режиме авто*/
+  outline: none; /*Кнопка дефолтная в светлом режиме в режиме авто*/
 }
 
 .theme-auto .header__theme-menu-button_type_light:hover {
-  outline: 1px solid var(--theme-menu-button-border-hover-color);      /*Кнопка в ховере в режиме авто*/
+  outline: 1px solid var(--theme-menu-button-border-hover-color); /*Кнопка в ховере в режиме авто*/
 }
 
 .theme-auto .header__theme-menu-button_type_light:focus {
-  border: none;           /*Кнопка в фокусе в режиме авто*/
+  border: none; /*Кнопка в фокусе в режиме авто*/
 }
 
 .theme-auto .header__theme-menu-button_type_light:focus-visible {
-  border-bottom: 1px solid var(--theme-menu-button-border-focus-color);            /*Кнопка в фокус-визибл в режиме авто*/
+  border-bottom: 1px solid var(--theme-menu-button-border-focus-color); /*Кнопка в фокус-визибл в режиме авто*/
 }
 
 /*Кнопка неон*/
 
 .theme-auto .header__theme-menu-button_type_dark {
-  outline: none;      /*Кнопка дефолтная в темном режиме в режиме авто*/
+  outline: none; /*Кнопка дефолтная в темном режиме в режиме авто*/
 }
 
 .theme-auto .header__theme-menu-button_type_dark:hover {
-  outline: 1px solid var(--theme-menu-button-border-hover-color);      /*Кнопка в ховере в режиме авто*/
+  outline: 1px solid var(--theme-menu-button-border-hover-color); /*Кнопка в ховере в режиме авто*/
 }
 
 .theme-auto .header__theme-menu-button_type_dark:focus {
-  border: none;            /*Кнопка в фокусе в режиме авто*/
+  border: none; /*Кнопка в фокусе в режиме авто*/
 }
 
 .theme-auto .header__theme-menu-button_type_dark:focus-visible {
-  border-bottom: 1px solid var(--theme-menu-button-border-focus-color);            /*Кнопка в фокус-визибл в режиме авто*/
+  border-bottom: 1px solid var(--theme-menu-button-border-focus-color); /*Кнопка в фокус-визибл в режиме авто*/
 }
 
 /*Украшение REC*/
@@ -106,7 +106,7 @@
   padding-right: 9px;
   gap: 10px;
   color: var(--accent-color);
-  font-family: var(--general-font-family);
+  font-family: var(--general-font-family), sans-serif;
   font-weight: var(--font-weight-normal);
   font-size: 18px;
   line-height: 25px;
@@ -122,25 +122,23 @@
 }
 
 .title-decor {
-  background-color: var(
-    --accent-color  
-  );
+  background-color: var(--accent-color);
   color: var(--background-color);
 }
 
 /*Ссылки в тексте*/
 
 .article__text .link {
-  text-shadow: 3px 2px 0 var(--accent-color);         /*Дефолтное состояние ссылки*/
+  text-shadow: 3px 2px 0 var(--accent-color); /*Дефолтное состояние ссылки*/
   text-decoration: none;
 }
 
 .article__text .link:hover {
-  border-bottom: 2px solid var(--main-text-link-color);      /*Ссылка в состоянии ховер*/      /*TODO проверить совпадение подчеркивания с макетом*/
+  border-bottom: 2px solid var(--main-text-link-color); /*Ссылка в состоянии ховер*/ /*TODO проверить совпадение подчеркивания с макетом*/
 }
 
 .article__text .link:focus {
-  outline: 1px solid var(--main-text-link-color);        /*Ссылка в состоянии фокус*/
+  outline: 1px solid var(--main-text-link-color); /*Ссылка в состоянии фокус*/
 }
 
 .header__title {
@@ -458,7 +456,7 @@
     padding-left: 20px;
     padding-right: 20px;
   }
-  
+
   .pictures__gallery {
     gap: 20px;
   }
@@ -499,7 +497,6 @@
   .footer__title {
     font-size: var(--tablet-footer-title);
   }
-
 }
 
 /*Десктоп*/
