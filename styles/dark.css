@@ -40,6 +40,10 @@
   /* Вам также нужно будет написать ряд подобных селекторов */
 }
 
+.theme-dark .rec-item {
+  display: flex;
+}
+
 /*Кнопка день*/
 
 .theme-dark .header__theme-menu-button_type_light:hover {
@@ -74,6 +78,10 @@
   --theme-menu-button-border-hover-color: #FF007066; /* 40% transparency*/
   --theme-menu-button-border-focus-color: #FF0070;
   --section-title-font-color: #FF0070;
+  }
+
+  .rec-item {
+    display: flex;
   }
 
   /*Кнопка день*/
