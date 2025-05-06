@@ -47,7 +47,11 @@
 }
 
 .theme-dark .header__theme-menu-button_type_light:focus {
-  border-bottom: 1px solid var(--theme-menu-button-border-focus-color);     /*Кнопка в фокусе в темной теме*/
+  border: none;     /*Кнопка в фокусе в темной теме*/
+}
+
+.theme-dark .header__theme-menu-button_type_light:focus-visible {
+  border-bottom: 1px solid var(--theme-menu-button-border-focus-color);     /*Кнопка в фокус-визибл в темной теме*/
 }
 
 /*Кнопка неон*/
@@ -79,7 +83,11 @@
   }
   
   .header__theme-menu-button_type_light:focus {
-    border-bottom: 1px solid var(--theme-menu-button-border-focus-color);     /*Кнопка в фокусе в темной теме*/
+    border: none;     /*Кнопка в фокусе в темной теме*/
+  }
+
+  .header__theme-menu-button_type_light:focus-visible {
+    border-bottom: 1px solid var(--theme-menu-button-border-focus-color);     /*Кнопка в фокус-визибл в темной теме*/
   }
 
   /*Кнопка авто*/
@@ -88,6 +96,10 @@
   }
 
   .header__theme-menu-button_type_auto:focus {
+    border: none;
+  }
+
+  .header__theme-menu-button_type_auto:focus-visible {
     border-bottom: 1px solid var(--theme-menu-button-border-focus-color);
   }
   

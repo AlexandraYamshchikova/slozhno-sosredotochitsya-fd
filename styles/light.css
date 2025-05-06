@@ -65,7 +65,11 @@
 }
 
 .theme-light .header__theme-menu-button_type_dark:focus {
-  border-bottom: 1px solid var(--theme-menu-button-border-focus-color);     /*Кнопка в фокусе в светлой теме*/
+  border: none;     /*Кнопка в фокусе в светлой теме*/
+}
+
+.theme-light .header__theme-menu-button_type_dark:focus-visible {
+  border-bottom: 1px solid var(--theme-menu-button-border-focus-color);     /*Кнопка в фокус-визибл в светлой теме*/
 }
 
 @media (prefers-color-scheme: light) {
@@ -104,6 +108,10 @@
   }
 
   .header__theme-menu-button_type_auto:focus {
+    border: none;
+  }
+
+  .header__theme-menu-button_type_auto:focus-visible {
     border-bottom: 1px solid var(--theme-menu-button-border-focus-color);
   }
   
@@ -118,6 +126,10 @@
   }
   
   .header__theme-menu-button_type_dark:focus {
-    border-bottom: 1px solid var(--theme-menu-button-border-focus-color);     /*Кнопка в фокусе в светлой теме*/
+    border: none;     /*Кнопка в фокусе в светлой теме*/
+  }
+
+  .header__theme-menu-button_type_dark:focus-visible {
+    border-bottom: 1px solid var(--theme-menu-button-border-focus-color);     /*Кнопка в фокус-визибл в светлой теме*/
   }
 }

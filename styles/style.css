@@ -68,7 +68,11 @@
 }
 
 .theme-auto .header__theme-menu-button_type_light:focus {
-  border-bottom: 1px solid var(--theme-menu-button-border-focus-color);            /*Кнопка в фокусе в режиме авто*/
+  border: none;           /*Кнопка в фокусе в режиме авто*/
+}
+
+.theme-auto .header__theme-menu-button_type_light:focus-visible {
+  border-bottom: 1px solid var(--theme-menu-button-border-focus-color);            /*Кнопка в фокус-визибл в режиме авто*/
 }
 
 /*Кнопка неон*/
@@ -82,7 +86,11 @@
 }
 
 .theme-auto .header__theme-menu-button_type_dark:focus {
-  border-bottom: 1px solid var(--theme-menu-button-border-focus-color);            /*Кнопка в фокусе в режиме авто*/
+  border: none;            /*Кнопка в фокусе в режиме авто*/
+}
+
+.theme-auto .header__theme-menu-button_type_dark:focus-visible {
+  border-bottom: 1px solid var(--theme-menu-button-border-focus-color);            /*Кнопка в фокус-визибл в режиме авто*/
 }
 
 /*Украшение REC*/
