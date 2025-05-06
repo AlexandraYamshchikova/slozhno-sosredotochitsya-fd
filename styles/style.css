@@ -197,6 +197,13 @@
   grid-template-columns: repeat(3, 1fr);
 }
 
+.one-column-articles-container {
+  display: flex;
+  flex-direction: column;
+  grid-column: span 3;
+  gap: 20px;
+}
+
 /*Секция 1*/
 
 .why {
@@ -218,10 +225,7 @@
 }
 
 .why__articles-container {
-  display: flex;
-  flex-direction: column;
-  grid-column: span 3;
-  gap: 20px;
+                                          /*TODO Если сюда ничего не пойдет, удалить*/
 }
 
 /*article*/
@@ -279,10 +283,7 @@
 }
 
 .how__articles-container {
-  display: flex;
-  flex-direction: column;
-  grid-column: span 3;
-  gap: 20px;
+                                          /*TODO Если сюда ничего не пойдет, удалить*/
 }
 
 .how__subtitle {
@@ -402,6 +403,11 @@
     gap: 20px;
   }
 
+  .two-columns-articles-container {
+    grid-column: 2/4;
+    padding-left: 5px;
+  }
+
   /*Секция 1*/
   .why {
     margin-block-start: 60px;
@@ -411,11 +417,6 @@
 
   .why__title {
     grid-column: 1;
-  }
-
-  .why__articles-container {
-    grid-column: 2/4;
-    padding-left: 5px;
   }
 
   /*Секция 2*/
@@ -441,11 +442,6 @@
 
   .how__title {
     grid-column: 1;
-  }
-
-  .how__articles-container {
-    grid-column: 2/4;
-    padding-left: 5px;
   }
 
   /*Секция 4 (галерея)*/
