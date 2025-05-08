@@ -5,18 +5,19 @@
 */
 
 :root.theme-dark {
-  --background-img: url('../images/cover-image-dark.png');
+  --background-img: url("../images/cover-image-dark.png");
   --background-color: #000028;
-  --title-color: #DB00FF;
-  --accent-color: #FF0070;
-  --main-text-color: #F1B2CE;
-  --main-text-link-color: #F1B2CE;
-  --decorated-zone-color: #FF0070;
-  --theme-menu-button-font-color: #FF0070;
-  --theme-menu-button-border-color: #FF0070;
-  --theme-menu-button-border-hover-color: #FF007066; /* 40% transparency*/
-  --theme-menu-button-border-focus-color: #FF0070;
-  --section-title-font-color: #FF0070;
+  --title-color: #db00ff;
+  --accent-color: #ff0070;
+  --title-decor-text-color: #000028;
+  --main-text-color: #f1b2ce;
+  --main-text-link-color: #f1b2ce;
+  --decorated-zone-color: #ff0070;
+  --theme-menu-button-font-color: #ff0070;
+  --theme-menu-button-border-color: #ff0070;
+  --theme-menu-button-border-hover-color: #ff007066; /* 40% transparency*/
+  --theme-menu-button-border-focus-color: #ff0070;
+  --section-title-font-color: #ff0070;
 
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
@@ -24,31 +25,30 @@
   */
 }
 
+/*Я оставила в этом файле селекторы ".theme-dark .rec-item" и .rec-item (ниже), потому что иначе у меня стили для светлой темы перебивали стили для темной*/
+
 .theme-dark .rec-item {
   display: flex;
 }
 
-
 @media (prefers-color-scheme: dark) {
   :root {
-  --background-img: url('../images/cover-image-dark.png');
-  --background-color: #000028;
-  --title-color: #DB00FF;
-  --accent-color: #FF0070;
-  --main-text-color: #F1B2CE;
-  --main-text-link-color: #F1B2CE;
-  --decorated-zone-color: #FF0070;
-  --theme-menu-button-font-color: #FF0070;
-  --theme-menu-button-border-color: #FF0070;
-  --theme-menu-button-border-hover-color: #FF007066; /* 40% transparency*/
-  --theme-menu-button-border-focus-color: #FF0070;
-  --section-title-font-color: #FF0070;
+    --background-img: url("../images/cover-image-dark.png");
+    --background-color: #000028;
+    --title-color: #db00ff;
+    --accent-color: #ff0070;
+    --title-decor-text-color: #000028;
+    --main-text-color: #f1b2ce;
+    --main-text-link-color: #f1b2ce;
+    --decorated-zone-color: #ff0070;
+    --theme-menu-button-font-color: #ff0070;
+    --theme-menu-button-border-color: #ff0070;
+    --theme-menu-button-border-hover-color: #ff007066; /* 40% transparency*/
+    --theme-menu-button-border-focus-color: #ff0070;
+    --section-title-font-color: #ff0070;
   }
 
-/*
   .rec-item {
     display: flex;
-  }                                            TODO Возможно, надо удалить по замечаниям ревьюера
-*/
-
+  }
 }

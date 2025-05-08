@@ -54,7 +54,7 @@
 .header__theme-menu-button_active {
   pointer-events: none;
   outline: 1px solid var(--theme-menu-button-border-color);
-} /*TODO Доразобраться с поведением кнопок  в том числе с прыганием в состоянии фокус*/
+}
 
 .header__theme-menu-button:hover { 
   outline: 1px solid var(--theme-menu-button-border-hover-color); 
@@ -100,7 +100,7 @@
 
 .title-decor {
   background-color: var(--accent-color);
-  color: var(--background-color);
+  color: var(--title-decor-text-color);
 }
 
 /*Ссылки в тексте*/
@@ -111,7 +111,7 @@
 }
 
 .article__text .link:hover {
-  border-bottom: 1.5px solid var(--main-text-link-color); /*Ссылка в состоянии ховер*/ /*TODO проверить совпадение подчеркивания с макетом*/
+  border-bottom: 1.5px solid var(--main-text-link-color); /*Ссылка в состоянии ховер*/
 }
 
 .article__text .link:focus {
@@ -205,10 +205,6 @@
   color: var(--section-title-font-color);
 }
 
-.why__articles-container {
-                                          /*TODO Если сюда ничего не пойдет, удалить*/
-}
-
 /*article*/
 
 .article {
@@ -261,10 +257,6 @@
 
 .how__title {
   grid-column: span 3;
-}
-
-.how__articles-container {
-                                          /*TODO Если сюда ничего не пойдет, удалить*/
 }
 
 .how__subtitle {
