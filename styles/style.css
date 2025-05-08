@@ -56,16 +56,16 @@
   outline: 1px solid var(--theme-menu-button-border-color);
 }
 
-.header__theme-menu-button:hover { 
-  outline: 1px solid var(--theme-menu-button-border-hover-color); 
+.header__theme-menu-button:hover {
+  outline: 1px solid var(--theme-menu-button-border-hover-color);
 } 
 
-.header__theme-menu-button:focus { 
-  border: none; 
+.header__theme-menu-button:focus {
+  border: none;
 }
 
-.header__theme-menu-button:focus-visible { 
-  border-bottom: 1px solid var(--theme-menu-button-border-focus-color); 
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--theme-menu-button-border-focus-color);
 } 
 
 
