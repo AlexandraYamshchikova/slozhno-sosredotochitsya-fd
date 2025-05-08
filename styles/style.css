@@ -51,47 +51,24 @@
   border: none;
 }
 
-/*Кнопка авто*/
-
 .header__theme-menu-button_active {
   pointer-events: none;
   outline: 1px solid var(--theme-menu-button-border-color);
 } /*TODO Доразобраться с поведением кнопок  в том числе с прыганием в состоянии фокус*/
 
-/*Кнопка день*/
-.theme-auto .header__theme-menu-button_type_light {
-  outline: none; /*Кнопка дефолтная в светлом режиме в режиме авто*/
+.header__theme-menu-button:hover { 
+  outline: 1px solid var(--theme-menu-button-border-hover-color); 
+} 
+
+.header__theme-menu-button:focus { 
+  border: none; 
 }
 
-.theme-auto .header__theme-menu-button_type_light:hover {
-  outline: 1px solid var(--theme-menu-button-border-hover-color); /*Кнопка в ховере в режиме авто*/
-}
+.header__theme-menu-button:focus-visible { 
+  border-bottom: 1px solid var(--theme-menu-button-border-focus-color); 
+} 
 
-.theme-auto .header__theme-menu-button_type_light:focus {
-  border: none; /*Кнопка в фокусе в режиме авто*/
-}
 
-.theme-auto .header__theme-menu-button_type_light:focus-visible {
-  border-bottom: 1px solid var(--theme-menu-button-border-focus-color); /*Кнопка в фокус-визибл в режиме авто*/
-}
-
-/*Кнопка неон*/
-
-.theme-auto .header__theme-menu-button_type_dark {
-  outline: none; /*Кнопка дефолтная в темном режиме в режиме авто*/
-}
-
-.theme-auto .header__theme-menu-button_type_dark:hover {
-  outline: 1px solid var(--theme-menu-button-border-hover-color); /*Кнопка в ховере в режиме авто*/
-}
-
-.theme-auto .header__theme-menu-button_type_dark:focus {
-  border: none; /*Кнопка в фокусе в режиме авто*/
-}
-
-.theme-auto .header__theme-menu-button_type_dark:focus-visible {
-  border-bottom: 1px solid var(--theme-menu-button-border-focus-color); /*Кнопка в фокус-визибл в режиме авто*/
-}
 
 /*Украшение REC*/
 
@@ -129,16 +106,20 @@
 /*Ссылки в тексте*/
 
 .article__text .link {
-  text-shadow: 3px 2px 0 var(--accent-color); /*Дефолтное состояние ссылки*/
+  text-shadow: 2px 2px 0 var(--accent-color); /*Дефолтное состояние ссылки*/
   text-decoration: none;
 }
 
 .article__text .link:hover {
-  border-bottom: 2px solid var(--main-text-link-color); /*Ссылка в состоянии ховер*/ /*TODO проверить совпадение подчеркивания с макетом*/
+  border-bottom: 1.5px solid var(--main-text-link-color); /*Ссылка в состоянии ховер*/ /*TODO проверить совпадение подчеркивания с макетом*/
 }
 
 .article__text .link:focus {
-  outline: 1px solid var(--main-text-link-color); /*Ссылка в состоянии фокус*/
+  outline: none; /*Ссылка в состоянии фокус*/
+}
+
+.article__text .link:focus-visible {
+  outline: 1px solid var(--main-text-link-color); /*Ссылка в состоянии фокус-визибл*/
 }
 
 .header__title {
