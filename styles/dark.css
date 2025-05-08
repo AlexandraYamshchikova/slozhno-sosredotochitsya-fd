@@ -5,18 +5,19 @@
 */
 
 :root.theme-dark {
-  --background-img: url('../images/cover-image-dark.png');
+  --background-img: url("../images/cover-image-dark.png");
   --background-color: #000028;
-  --title-color: #DB00FF;
-  --accent-color: #FF0070;
-  --main-text-color: #F1B2CE;
-  --main-text-link-color: #F1B2CE;
-  --decorated-zone-color: #FF0070;
-  --theme-menu-button-font-color: #FF0070;
-  --theme-menu-button-border-color: #FF0070;
-  --theme-menu-button-border-hover-color: #FF007066; /* 40% transparency*/
-  --theme-menu-button-border-focus-color: #FF0070;
-  --section-title-font-color: #FF0070;
+  --title-color: #db00ff;
+  --accent-color: #ff0070;
+  --title-decor-text-color: #000028;
+  --main-text-color: #f1b2ce;
+  --main-text-link-color: #f1b2ce;
+  --decorated-zone-color: #ff0070;
+  --theme-menu-button-font-color: #ff0070;
+  --theme-menu-button-border-color: #ff0070;
+  --theme-menu-button-border-hover-color: #ff007066; /* 40% transparency*/
+  --theme-menu-button-border-focus-color: #ff0070;
+  --section-title-font-color: #ff0070;
 
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
@@ -24,89 +25,30 @@
   */
 }
 
-.theme-dark .page {
-  --background-img: url('../images/cover-image-dark.png');
-  --background-color: #000028;
-  --title-color: #DB00FF;
-  --accent-color: #FF0070;
-  --main-text-color: #F1B2CE;
-  --main-text-link-color: #F1B2CE;
-  --decorated-zone-color: #FF0070;
-  --theme-menu-button-font-color: #FF0070;
-  --theme-menu-button-border-color: #FF0070;
-  --theme-menu-button-border-hover-color: #FF007066; /* 40% transparency*/
-  --theme-menu-button-border-focus-color: #FF0070;
-  --section-title-font-color: #FF0070;
-  /* Вам также нужно будет написать ряд подобных селекторов */
-}
+/*Я оставила в этом файле селекторы ".theme-dark .rec-item" и .rec-item (ниже), потому что иначе у меня стили для светлой темы перебивали стили для темной*/
 
-/*Кнопка день*/
-
-.theme-dark .header__theme-menu-button_type_light:hover {
-  outline: 1px solid var(--theme-menu-button-border-hover-color);   /*Кнопка в ховере в темной теме*/
-}
-
-.theme-dark .header__theme-menu-button_type_light:focus {
-  border: none;     /*Кнопка в фокусе в темной теме*/
-}
-
-.theme-dark .header__theme-menu-button_type_light:focus-visible {
-  border-bottom: 1px solid var(--theme-menu-button-border-focus-color);     /*Кнопка в фокус-визибл в темной теме*/
-}
-
-/*Кнопка неон*/
-
-.theme-dark .header__theme-menu-button_type_dark {
-  outline: 1px solid var(--theme-menu-button-border-color);      /*Кнопка дефолтная в темном режиме*/
+.theme-dark .rec-item {
+  display: flex;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-  --background-img: url('../images/cover-image-dark.png');
-  --background-color: #000028;
-  --title-color: #DB00FF;
-  --accent-color: #FF0070;
-  --main-text-color: #F1B2CE;
-  --main-text-link-color: #F1B2CE;
-  --decorated-zone-color: #FF0070;
-  --theme-menu-button-font-color: #FF0070;
-  --theme-menu-button-border-color: #FF0070;
-  --theme-menu-button-border-hover-color: #FF007066; /* 40% transparency*/
-  --theme-menu-button-border-focus-color: #FF0070;
-  --section-title-font-color: #FF0070;
+    --background-img: url("../images/cover-image-dark.png");
+    --background-color: #000028;
+    --title-color: #db00ff;
+    --accent-color: #ff0070;
+    --title-decor-text-color: #000028;
+    --main-text-color: #f1b2ce;
+    --main-text-link-color: #f1b2ce;
+    --decorated-zone-color: #ff0070;
+    --theme-menu-button-font-color: #ff0070;
+    --theme-menu-button-border-color: #ff0070;
+    --theme-menu-button-border-hover-color: #ff007066; /* 40% transparency*/
+    --theme-menu-button-border-focus-color: #ff0070;
+    --section-title-font-color: #ff0070;
   }
 
-  /*Кнопка день*/
-
-  .header__theme-menu-button_type_light:hover {
-    outline: 1px solid var(--theme-menu-button-border-hover-color);   /*Кнопка в ховере в темной теме*/
+  .rec-item {
+    display: flex;
   }
-  
-  .header__theme-menu-button_type_light:focus {
-    border: none;     /*Кнопка в фокусе в темной теме*/
-  }
-
-  .header__theme-menu-button_type_light:focus-visible {
-    border-bottom: 1px solid var(--theme-menu-button-border-focus-color);     /*Кнопка в фокус-визибл в темной теме*/
-  }
-
-  /*Кнопка авто*/
-  .header__theme-menu-button_type_auto:hover {
-    outline: 1px solid var(--theme-menu-button-border-hover-color);
-  }
-
-  .header__theme-menu-button_type_auto:focus {
-    border: none;
-  }
-
-  .header__theme-menu-button_type_auto:focus-visible {
-    border-bottom: 1px solid var(--theme-menu-button-border-focus-color);
-  }
-  
-  /*Кнопка неон*/
-  
-  .header__theme-menu-button_type_dark {
-    outline: 1px solid var(--theme-menu-button-border-color);      /*Кнопка дефолтная в темном режиме*/
-  }
-
 }
